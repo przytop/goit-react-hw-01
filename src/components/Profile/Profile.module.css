@@ -1,0 +1,52 @@
+.card {
+  border: 3px solid black;
+  border-radius: 2%;
+  width: 600px;
+  overflow: hidden;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 5px;
+}
+
+.avatar {
+  background-color: rgb(58, 57, 57);
+  border-radius: 50%;
+  width: 250px;
+}
+
+.text {
+  font-size: 40px;
+  color: black;
+}
+.text-bold {
+  composes: text;
+  font-weight: bold;
+}
+.text-grey {
+  composes: text;
+  color: grey;
+}
+
+.stats {
+  display: flex;
+  background-color: rgb(214, 212, 212);
+  border-top: 3px solid gray;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+.stat-border {
+  composes: stat;
+  border-right: solid gray;
+}
