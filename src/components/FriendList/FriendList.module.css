@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 6%;
+  padding: 10px;
+  display: flex;
+  overflow: hidden;
+}
