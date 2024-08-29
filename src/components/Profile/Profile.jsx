@@ -1,6 +1,13 @@
+import PropTypes from "prop-types";
 import css from "./Profile.module.css";
 
-export default function Profile({ name, tag, location, image, stats }) {
+export default function Profile({
+  name = "Unknown",
+  tag = "Unknown",
+  location = "Unknown",
+  image = "",
+  stats = { followers: 0, views: 0, likes: 0 },
+}) {
   return (
     <div className={css.card}>
       <div className={css.info}>
@@ -27,3 +34,15 @@ export default function Profile({ name, tag, location, image, stats }) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  image: PropTypes.string,
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }).isRequired,
+};

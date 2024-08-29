@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: rgb(58, 56, 56);
+  color: white;
+}
+
+th,
+td {
+  border: 2px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(214, 212, 212);
+}
+
+.type-name {
+  text-transform: capitalize;
+}
